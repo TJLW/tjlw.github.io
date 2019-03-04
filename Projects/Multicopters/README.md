@@ -66,10 +66,10 @@ All contributors who helped build to the first iteration ZyboCopter. From left t
 </p>
 
 
-<div style="text-align:center">
+<p align="center">
 <img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/IMG_5988.jpg?raw=True" />
 Another in-flight shot.
-</div>
+</p>
 
 ![FlightImage2](https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/IMG_5988.jpg?raw=True)
 <!-- <p align="center"> -->
