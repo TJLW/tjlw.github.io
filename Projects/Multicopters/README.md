@@ -72,9 +72,9 @@ Another in-flight shot.
 </div>
 
 ![FlightImage2](https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/IMG_5988.jpg?raw=True)
-<p align="center">
+<!-- <p align="center"> -->
 Another in-flight shot.
-</p>
+<!-- </p> -->
 
 
 ![CloseupImage](https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/IMG_5941.jpg?raw=True)
