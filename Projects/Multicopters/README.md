@@ -47,7 +47,7 @@ Due to the method with which ArduCopter originally accessed RC input signals, a 
 To satisfy the final peripheral requirement, ESCs/Motors, a second AXI-enabled peripheral was added to supply PWM signals to each ESC/Motor set. ArduCopter supplies a PWM specification to memory, though the specification explicitly listed output period and duty cycle length. For the sake of symmetry, ArduCopter was modified to place only a motor control signal value in memory while the PWM Encoding IP generates a corresponding PWM signal to be sent to the ESCs/Motors. The ESC’s typically respond to a varying signal frequency, though 50Hz is standard. Thus, we utilized the calculated 1MHz reference clock to measure the duration of the output PWM’s duty cycle.
 
 
-<p align="center"> <img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/ZyboCopter-Hardware-Design-Diagram.png" /> </p>
+<p align="center"> <img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/ZyboCopter-Hardware-Design-Diagram.png?raw=True" /> </p>
 <p align="center">
 	Hardware Design
 </p>
