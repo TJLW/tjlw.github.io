@@ -2,7 +2,7 @@
 <a href="https://tjlw.github.io/">Go to Home page</a>
 </p>
 
-## Multi-copters
+# Multi-copters
 
 <!-- Header Image -->
 ![FlightImage](https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/IMG_6086.jpg?raw=True)
