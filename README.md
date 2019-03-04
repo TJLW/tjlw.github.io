@@ -14,8 +14,17 @@ better member of the open-source community.
 
 
 
-<!-- This just adds a bit of whitespace, look a little better on desktop -->
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<!-- This just adds a bit of whitespace, look a little better on big desktops -->
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp; 
 
 
 
