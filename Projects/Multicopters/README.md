@@ -37,8 +37,7 @@ High Level System Layout
 </p>
 
 <p align="center">
-<img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/ZyboCopter-High-Level-Layout.png?raw=True" />
-High Level System Layout
+<img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/ZyboCopter-High-Level-Layout.png?raw=True" alt="High Level System Layout"/>
 </p>
 
 
