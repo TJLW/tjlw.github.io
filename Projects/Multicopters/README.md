@@ -4,10 +4,9 @@
 
 # Multi-copters
 
-<!-- Header Image -->
-![FlightImage](https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/IMG_6086.jpg?raw=True)
+<p align="center"> <img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/IMG_6086.jpg?raw=True"/> </p>
 <p align="center">
-The first successful outdoor flight of the ZyboCopter in September of 2017.
+ The first successful outdoor flight of the ZyboCopter in September of 2017.
 </p>
 
 
