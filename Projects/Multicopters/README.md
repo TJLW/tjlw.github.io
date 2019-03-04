@@ -6,7 +6,7 @@
 
 <p align="center"> <img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/IMG_6086.jpg?raw=True"/> </p>
 <p align="center">
- The first successful outdoor flight of the ZyboCopter in September of 2017.
+	The first successful outdoor flight of the ZyboCopter in September of 2017.
 </p>
 
 
@@ -31,7 +31,9 @@ ArduPilot devices also require a mission planning software to utilize advanced f
 
 
 <p align="center"> <img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/ZyboCopter-High-Level-Layout.png?raw=True" alt="High Level System Layout"/> </p>
-<p align="center"> High Level System Layout </p>
+<p align="center">
+	High Level System Layout
+</p>
 
 
 
@@ -47,7 +49,7 @@ To satisfy the final peripheral requirement, ESCs/Motors, a second AXI-enabled p
 
 ![HardwareDesignImage](https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/ZyboCopter-Hardware-Design-Diagram.png?raw=True)
 <p align="center">
-Hardware Design Diagram
+	Hardware Design Diagram
 </p>
 
 
