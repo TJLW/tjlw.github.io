@@ -31,14 +31,9 @@ The ArduCopter flight controller software is a recent fork of the ArduPilot deve
 ArduPilot devices also require a mission planning software to utilize advanced flight modes. ArduPilot utilizes the command protocol MAVlink in order to communicate with compatible ground station software. Of particular interest is Mission Planner, which has developed along with ArduPilot. This software allows an interactive GUI to help with first-time setup, set flight paths/modes, change internal parameters, and most importantly, monitor flight status with telemetry data. A command line argument supplied when running ArduCopter allows you to push MAVlink commands over preferred interfaces, for instance a TCP socket. The ZyboCopter platform utilizes the TCP channel in order to communicate with Mission Planner via network interfaces.
 
 
-![HighLevelImage](https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/ZyboCopter-High-Level-Layout.png?raw=True)
-<p align="center">
-High Level System Layout
-</p>
+<p align="center"> <img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/ZyboCopter-High-Level-Layout.png?raw=True" alt="High Level System Layout"/> </p>
+<p align="center"> High Level System Layout </p>
 
-<p align="center">
-<img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/ZyboCopter-High-Level-Layout.png?raw=True" alt="High Level System Layout"/>
-</p>
 
 
 
