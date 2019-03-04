@@ -30,7 +30,7 @@ The ArduCopter flight controller software is a recent fork of the ArduPilot deve
 ArduPilot devices also require a mission planning software to utilize advanced flight modes. ArduPilot utilizes the command protocol MAVlink in order to communicate with compatible ground station software. Of particular interest is Mission Planner, which has developed along with ArduPilot. This software allows an interactive GUI to help with first-time setup, set flight paths/modes, change internal parameters, and most importantly, monitor flight status with telemetry data. A command line argument supplied when running ArduCopter allows you to push MAVlink commands over preferred interfaces, for instance a TCP socket. The ZyboCopter platform utilizes the TCP channel in order to communicate with Mission Planner via network interfaces.
 
 
-<p align="center"> <img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/ZyboCopter-High-Level-Layout.png?raw=True" alt="High Level System Layout"/> </p>
+<p align="center"> <img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/ZyboCopter-High-Level-Layout.png?raw=True"/> </p>
 <p align="center">
 	High Level System Layout
 </p>
@@ -47,11 +47,10 @@ Due to the method with which ArduCopter originally accessed RC input signals, a 
 To satisfy the final peripheral requirement, ESCs/Motors, a second AXI-enabled peripheral was added to supply PWM signals to each ESC/Motor set. ArduCopter supplies a PWM specification to memory, though the specification explicitly listed output period and duty cycle length. For the sake of symmetry, ArduCopter was modified to place only a motor control signal value in memory while the PWM Encoding IP generates a corresponding PWM signal to be sent to the ESCs/Motors. The ESC’s typically respond to a varying signal frequency, though 50Hz is standard. Thus, we utilized the calculated 1MHz reference clock to measure the duration of the output PWM’s duty cycle.
 
 
-![HardwareDesignImage](https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/ZyboCopter-Hardware-Design-Diagram.png?raw=True)
+<p align="center"> <img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/ZyboCopter-Hardware-Design-Diagram.png"/> </p>
 <p align="center">
-	Hardware Design Diagram
+	Hardware Design
 </p>
-
 
 In the development process, Ethernet connections to remote machines hosting the ground station software or Xilinx TCF debugging with SDK were used. It was necessary to upgrade this method to wireless for flights, thus the Zybo’s USB port was targeted for a WiFi USB dongle. In attempting to implement this, it was discovered that there is a bug regarding the USB port’s 5V power supply. An alternate solution was devised with a Raspberry Pi serving as a network bridge. Utilizing an existing WiFi network, the Pi will connect and provide port forwarding services. That is, the Zybo is connected to the Pi’s Ethernet subnet and port forwarding is enabled for specified ports in order to allow WLAN to subnet access. Ports 1243, 1534, and 3000 were used for ArduCopter MAVlink commands, Xilinx TCF agent, and SSH respectively. The ZyboCopter’s SSH port was changed to 3000 in order to avoid an SSH collision with port forwarding and provide both the ZyboCopter and Pi separate SSH channels. This solution is currently adequate, though WiFi has a number of downfalls that other communication methods may alleviate. This is a topic of future improvements for the platform.
 
