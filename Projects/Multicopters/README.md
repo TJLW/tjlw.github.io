@@ -59,24 +59,20 @@ In the development process, Ethernet connections to remote machines hosting the 
 
 ### Pictures
 
-![GroupImage](https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/IMG_6135.jpg?raw=True)
 <p align="center">
-All contributors who helped build to the first iteration ZyboCopter. From left to right: Myself, Wassim Ramy, and Chenlong "Jim" Lin.
+<img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/IMG_6135.jpg?raw=True" /> </p>
+<p align="center">
+	All contributors who helped build to the first iteration ZyboCopter. From left to right: Myself, Wassim Ramy, and Chenlong "Jim" Lin.
 </p>
 
-
 <p align="center">
-<img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/IMG_5988.jpg?raw=True" />
-Another in-flight shot.
+<img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/IMG_5988.jpg?raw=True" /> </p>
+<p align="center">
+	Another in-flight shot.
 </p>
 
-![FlightImage2](https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/IMG_5988.jpg?raw=True)
-<!-- <p align="center"> -->
-Another in-flight shot.
-<!-- </p> -->
-
-
-![CloseupImage](https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/IMG_5941.jpg?raw=True)
 <p align="center">
-Closeup of the Zybo SoC flight controller.
+<img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/IMG_5941.jpg?raw=True" /> </p>
+<p align="center">
+	Closeup of the Zybo SoC flight controller.
 </p>
