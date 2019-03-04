@@ -4,9 +4,16 @@
 
 ## Multi-copters
 
-![HeaderImage](https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/IMG_6135.jpg?raw=True)
+![GroupImage](https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/IMG_6135.jpg?raw=True)
 <p align="center">
-The first successful outdoor flight of the ZyboCopter. From left to right: Myself, Wassim Ramy, and Chenlong "Jim" "Lin"
+All contributors who helped build to the first iteration ZyboCopter. From left to right: Myself, Wassim Ramy, and Chenlong "Jim" Lin.
+</p>
+
+
+
+![FlightImage](https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/IMG_6086.jpg?raw=True)
+<p align="center">
+The first successful outdoor flight of the ZyboCopter in September of 2017.
 </p>
 
 
