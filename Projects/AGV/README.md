@@ -5,7 +5,7 @@
 
 
 
-# Autonomous Ground Vehicles
+# Arlo Autonomous Ground Vehicle
 
 <p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/AGV/Images/ArloControlUnit.png?raw=True"/> </p>
 <p align="center">
@@ -19,7 +19,7 @@
 
 We have utilized the Arlo Complete Robotic System by Parallax as the physical framework for our research into autonomous ground vehicles. This kit, [which can be bought here](https://www.parallax.com/product/28966), includes a frame, motors, wheels, optical encoders, a power distribution board, a motor controller, and a Parallax Activity Board. However, as is tradition with our research, we opt to replace the Activity Board with a much more capable FPGA SoC.
 
-
+The intent of this platform is to handle the evaluation of a number of robotic algorithms. Specifically for this iteration, the focus is autonomous mapping and obstacle avoidance. 
 
 
 ### Overview
@@ -32,7 +32,7 @@ We have utilized the Arlo Complete Robotic System by Parallax as the physical fr
 
 ### Software
 
-The software side of this current iteration utilizes a custom built Linux kernel built with the Xilinx Petalinux software. This allows for an easy generation of a kernel that is appropriate for any of the custom hardware implemented in programmable logic. A base Ubuntu 2018.4 LTS (Bionic Beaver) filesystem is used to complete our operating system.
+The software side of this current iteration utilizes a custom built Linux kernel built with the Xilinx Petalinux software that is booted on the Zynq processor. This allows for an easy generation of a kernel that is appropriate for any of the custom hardware implemented in programmable logic. A base Ubuntu 2018.4 LTS (Bionic Beaver) filesystem is used to complete our operating system.
 
 Playing a central role in the software is the Robotic Operating System (ROS) in order to enable a well-organized control system. Currently with our selection of Ubuntu 2018.2, we are using the latest distribution (at this time) ROS Melodic Morenia.
 
