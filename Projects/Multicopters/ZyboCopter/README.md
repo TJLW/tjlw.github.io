@@ -9,7 +9,7 @@
 
 <p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/ZyboCopter/Images/IMG_6086.jpg?raw=True"/> </p>
 <p align="center">
-	The first successful outdoor flight of the ZyboCopter in September of 2017.
+	The first successful outdoor flight of the ZyboCopter.
 </p>
 
 
@@ -79,7 +79,7 @@ In the development process, Ethernet connections to remote machines hosting the 
 <p align="center">
 <img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/ZyboCopter/Images/IMG_5941.jpg?raw=True" /> </p>
 <p align="center">
-	Closeup of the Zybo SoC flight controller.
+	Closeup of the Zybo SoC based flight controller.
 </p>
 
 
