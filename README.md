@@ -6,16 +6,18 @@ This page is an attempt to collect some of the work I have taken part in and be 
 better member of the open-source community.
 
 
+## Projects
 
-[Autonomous Ground Vehicle - Arlo Robotic Platform](https://tjlw.github.io/Projects/AGV)
+- [Arlo Autonomous Ground Vehicle](https://tjlw.github.io/Projects/ArloAGV)
 
-[Multi-copters](https://tjlw.github.io/Projects/Multicopters/ZyboCopter)
+- [Multi-copters](https://tjlw.github.io/Projects/Multicopters/ZyboCopter)
 
-[Robotic Operating System](https://tjlw.github.io/Projects/ROS)
-
-
+- [Robotic Operating System](https://tjlw.github.io/Projects/ROS)
 
 
+
+## Source Code
+This repository holds ONLY sources for project pages. All source code repositories will be referenced on the appropriate page when available
 
 
 

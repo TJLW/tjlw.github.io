@@ -7,7 +7,7 @@
 
 # Arlo Autonomous Ground Vehicle
 
-<p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/AGV/Images/ArloControlUnit.png?raw=True"/> </p>
+<p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ArloAGV/Images/ArloControlUnit.png?raw=True"/> </p>
 <p align="center">
 	Arlo Ground Vehicle Research Platform
 </p>
@@ -19,7 +19,7 @@
 
 We have utilized the Arlo Complete Robotic System by Parallax as the physical framework for our research into autonomous ground vehicles. This kit, [which can be bought here](https://www.parallax.com/product/28966), includes a frame, motors, wheels, optical encoders, a power distribution board, a motor controller, and a Parallax Activity Board. However, as is tradition with our research, we opt to replace the Activity Board with a much more capable FPGA SoC.
 
-The intent of this platform is to handle the evaluation of a number of robotic algorithms. Specifically for this iteration, the focus is autonomous mapping and obstacle avoidance. 
+The intent of this platform is to handle the evaluation of a number of robotic algorithms. Specifically for this iteration, the focus is autonomous mapping and obstacle avoidance.
 
 
 ### Overview
