@@ -15,7 +15,7 @@
 
 
 
-### Description
+## Description
 
 We have utilized the Arlo Complete Robotic System by Parallax as the physical framework for our research into autonomous ground vehicles. This kit, [which can be bought here](https://www.parallax.com/product/28966), includes a frame, motors, wheels, optical encoders, a power distribution board, a motor controller, and a Parallax Activity Board. However, as is tradition with our research, we opt to replace the Activity Board with a much more capable FPGA SoC.
 
