@@ -35,7 +35,7 @@ Complete list of current hardware:
 - Digilent Zybo Z7 7010 SoC
 - RPLIDAR A1 Rangefinder
 - USB WiFi Dongle (Realtek 8192CU Chipset)
-- Four port USB 2.0 Hub, Powered
+- Four port USB 2.0 Hub, with external power supply port
 
 As mentioned above, this iteration of our research platform includes a frame, motors, wheels, optical encoders, and a motor controller. The motor controller will handle the interpretation of the encoder signals and is the primary interface for control, configuration, and status updates of the motors.
 
@@ -49,4 +49,5 @@ Digilent support documentation for Zybo Z7 warns that many USB devices will exce
 
 
 Published: 4 March 2019
+
 Updated: 4 March 2019
