@@ -8,3 +8,14 @@
 <p align="center">
 	Arlo Ground Vehicle Research Platform
 </p>
+
+
+### Description
+
+### Overview
+
+### Motivation
+
+### Software
+
+### Hardware
