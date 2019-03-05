@@ -2,6 +2,9 @@
 <a href="https://tjlw.github.io/">Go to Home page</a>
 </p>
 
+
+
+
 # Autonomous Ground Vehicles
 
 <p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/AGV/Images/ArloControlUnit.png?raw=True"/> </p>
@@ -48,6 +51,4 @@ For perception, we are currently evaluating the versatility of a single two-dime
 Digilent support documentation for Zybo Z7 warns that many USB devices will exceed the current limit set by the SoC circuitry. As we are using more than one USB device, we selected a USB hub capable of accepting an external power supply. The Arlo power distribution board provides a number of power connections, one of which was utilized to provide a stable 5 volts at maximum 2 amps.
 
 
-Published: 4 March 2019
-
-Updated: 4 March 2019
+Updated: 4 March 2019, Published: 4 March 2019
