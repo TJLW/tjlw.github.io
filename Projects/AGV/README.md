@@ -21,4 +21,12 @@ We have utilized the Arlo Complete Robotic System by Parallax as the physical fr
 
 ### Software
 
+The software side of this current iteration utilizes a custom built Linux kernel built with the Xilinx Petalinux software. This allows for an easy generation of a kernel that is appropriate for any of the custom hardware implemented in programmable logic. A base Ubuntu 2018.2 LTS filesystem is used to complete our operating system.
+
+Playing a central role in the software is the Robotic Operating System (ROS) in order to enable a well-organized control system. Currently with our selection of Ubuntu 2018.2, we are using the latest version at this time
+
 ### Hardware
+
+
+Published: 4 March 2019
+Updated: 4 March 2019
