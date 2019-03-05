@@ -81,19 +81,6 @@ In the development process, Ethernet connections to remote machines hosting the 
 
 
 
-<p>
 
-&nbsp;
-&nbsp;
-&nbsp;  
 
-- Taylor JL Whitaker
-&nbsp;
-&nbsp;
-&nbsp;
-
-Published: 19 October 2016
-&nbsp;
-&nbsp;
-Updated: 4 March 2019
-</p>
+Updated: 4 March 2019, Published: 19 October 2016
