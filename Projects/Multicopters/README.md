@@ -13,7 +13,7 @@
 
 
 ### Description
-We have developed a multi-copter research platform in order to further our research into unmmaned systems. The project was started in order to provide a general framework with which future research may use as an unmanned aerial vehicle platform. The ZyboCopter is the prototype platform consisting of a hexa-copter body and a Zybo FPGA serving as the flight controller. The platform is customizable to fit any application for multi-copters, planes, rovers, and submarines. The onboard FPGA system provides avenues for developing software, kernel, and hardware applications.
+We have developed a multi-copter research platform in order to further our research into unmanned systems. The project was started in order to provide a general framework with which future research may use as an unmanned aerial vehicle platform. The ZyboCopter is the prototype platform consisting of a hexa-copter body and a Zybo FPGA serving as the flight controller. The platform is customizable to fit any application for multi-copters, planes, rovers, and submarines. The onboard FPGA system provides avenues for developing software, kernel, and hardware applications.
 
 
 
