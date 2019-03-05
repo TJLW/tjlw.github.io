@@ -10,14 +10,14 @@ better member of the open-source community.
 
 - [Arlo Autonomous Ground Vehicle](https://tjlw.github.io/Projects/ArloAGV)
 
-- [Multi-copters](https://tjlw.github.io/Projects/Multicopters/ZyboCopter)
+- [ZyboCopter Research Platform](https://tjlw.github.io/Projects/Multicopters/ZyboCopter)
 
 - [Robotic Operating System](https://tjlw.github.io/Projects/ROS)
 
 
 
 ## Source Code
-This repository holds ONLY sources for project pages. All source code repositories will be referenced on the appropriate page when available
+This repository holds ONLY sources for project pages. All source code repositories will be referenced on the appropriate page when available.
 
 
 
