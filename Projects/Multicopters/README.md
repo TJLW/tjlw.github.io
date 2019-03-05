@@ -15,13 +15,13 @@
 
 
 
-### Description
+## Description
 We have developed a multi-copter research platform in order to further our research into unmanned systems. The project was started in order to provide a general framework with which future research may use as an unmanned aerial vehicle platform. The ZyboCopter is the prototype platform consisting of a hexa-copter body and a Zybo FPGA serving as the flight controller. The platform is customizable to fit any application for multi-copters, planes, rovers, and submarines. The onboard FPGA system provides avenues for developing software, kernel, and hardware applications.
 
 
 
 
-### Overview
+## Overview
 To elaborate on the specifics of the ZyboCopter platform, we utilize a basic hexa-copter frame (including six ESCs and motors) along with a Zybo FPGA acting as a flight controller. A high-level layout of the ZyboCopter is seen in Figure 1. The FPGA hardware design is derived from a base design for the Zybo. This exposes many peripherals to the onboard Zynq processor, such as Ethernet, USB, and I2C ports. Also included are two small AXI-enabled IP implemented for the purpose of converting incoming radio control (RC) PWMs to values and outgoing motor controls to PWMs. The processor is booted with a Linux kernel generated with Xilinx’s Petalinux software. The filesystem, also generated from Petalinux, is replaced with a more powerful Debian OS distribution, specifically Debian 9 Stretch. The filesystem was replaced in order to ease Linux interaction with the inclusion of several command line tools and package managers. Acting as the top level control of the prototype platform, ArduCopter manages all interactions with flight-critical hardware. ArduCopter is the multi-copter program of ArduPilot. It is worth noting again that ArduPilot allows us to apply the control programs rovers, planes, and subs in addition to multi-copter platforms. All that is required is the physical vehicle equipped with applicable hardware. This is of particular interest for a generalized unmanned systems exploration platform.
 
 
