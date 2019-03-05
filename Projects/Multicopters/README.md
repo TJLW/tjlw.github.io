@@ -80,6 +80,12 @@ In the development process, Ethernet connections to remote machines hosting the 
 </p>
 
 
-Published: 19 October 2016
 
+<p>
+
+
+- Taylor JL Whitaker
+
+Published: 19 October 2016
 Updated: 4 March 2019
+</p>
