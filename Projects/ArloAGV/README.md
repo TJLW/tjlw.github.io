@@ -22,17 +22,11 @@ We have utilized the Arlo Complete Robotic System by Parallax as the physical fr
 The intent of this platform is to handle the evaluation of a number of robotic algorithms. Specifically for this iteration, the focus is autonomous mapping and obstacle avoidance.
 
 
-### Overview
-
-
-
-### Motivation
-
 
 
 ### Software
 
-The software side of this current iteration utilizes a custom built Linux kernel built with the Xilinx Petalinux software that is booted on the Zynq processor. This allows for an easy generation of a kernel that is appropriate for any of the custom hardware implemented in programmable logic. A base Ubuntu 2018.4 LTS (Bionic Beaver) filesystem is used to complete our operating system.
+The software side of this platform utilizes a custom built Linux kernel built with the Xilinx Petalinux software that is booted on the Zynq processor. This allows for an easy generation of a kernel that is appropriate for any of the custom hardware implemented in programmable logic. A base Ubuntu 2018.4 LTS (Bionic Beaver) filesystem is used to complete our operating system.
 
 Playing a central role in the software is the Robotic Operating System (ROS) in order to enable a well-organized control system. Currently with our selection of Ubuntu 2018.2, we are using the latest distribution (at this time) ROS Melodic Morenia.
 
@@ -57,6 +51,23 @@ Without any internal wireless chipset, we needed to include a USB WiFi dongle in
 For perception, we are currently evaluating the versatility of a single two-dimensional 360 degree laser range-finder or lidar. We are using the Slamtec RPLIDAR A1, [available here](https://www.slamtec.com/en/Lidar/A1). This communicates with our FPGA over USB connected to the onboard Zynq processor running our Linux distribution. The default serial baud rate is 19200 but can be increased to 115200 for faster transfer rates. In our case, we are currently maximizing this to ensure we are able to quickly issue motor speed commands and request motor speed updates.
 
 Digilent support documentation for Zybo Z7 warns that many USB devices will exceed the current limit set by the SoC circuitry. As we are using more than one USB device, we selected a USB hub capable of accepting an external power supply. The Arlo power distribution board provides a number of power connections, one of which was utilized to provide a stable 5 volts at maximum 2 amps.
+
+
+
+## Arlo ROS Nodes
+
+UPLOAD AND LINK CODE HERE
+
+
+### Robot Description
+
+### Motor Controller Interface
+
+### RPLidar
+
+### Teleoperation
+
+iOS Pythonista App
 
 
 
