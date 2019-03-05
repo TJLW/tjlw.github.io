@@ -2,4 +2,9 @@
 <a href="https://tjlw.github.io/">Go to Home page</a>
 </p>
 
-## Autonomous Ground Vehicles
+# Autonomous Ground Vehicles
+
+<p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/Images/IMG_6086.jpg?raw=True"/> </p>
+<p align="center">
+	Arlo Ground Vehicle Research Platform
+</p>

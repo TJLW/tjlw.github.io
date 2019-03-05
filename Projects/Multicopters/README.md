@@ -36,6 +36,8 @@ ArduPilot devices also require a mission planning software to utilize advanced f
 </p>
 
 
+Though autonomous flight was not the focus of this project, we wanted to ensure it was enabled by the selected flight controller option. Luckily ArduPilot has integrations for range-finders and proximity sensors for future research. Additionally, ROS integrations exist to expose an extensive amount of open-source robotic communication, mobility, mapping, and image processing algorithms.
+
 
 
 

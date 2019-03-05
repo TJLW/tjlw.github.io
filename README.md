@@ -9,7 +9,7 @@ better member of the open-source community.
 
 [Autonomous Ground Vehicle - Arlo Robotic Platform](https://tjlw.github.io/Projects/AGV)
 
-[Autonomous Multi-copters](https://tjlw.github.io/Projects/Multicopters)
+[Multi-copters](https://tjlw.github.io/Projects/Multicopters)
 
 [Robotic Operating System](https://tjlw.github.io/Projects/ROS)
 
