@@ -19,6 +19,8 @@ We have utilized the Arlo Complete Robotic System by Parallax as the physical fr
 
 ### Motivation
 
+
+
 ### Software
 
 The software side of this current iteration utilizes a custom built Linux kernel built with the Xilinx Petalinux software. This allows for an easy generation of a kernel that is appropriate for any of the custom hardware implemented in programmable logic. A base Ubuntu 2018.4 LTS (Bionic Beaver) filesystem is used to complete our operating system.
@@ -28,7 +30,15 @@ Playing a central role in the software is the Robotic Operating System (ROS) in 
 
 ### Hardware
 
-As mentioned above, this iteration of our research platform includes a frame, motors, wheels, optical encoders, and a motor controller. The FPGA SoC we chose for this application is the Digilent Zybo Z7 board with the Zynq7010 SoC onboard.
+As mentioned above, this iteration of our research platform includes a frame, motors, wheels, optical encoders, and a motor controller. The motor controller will handle the interpretation of the encoder signals and is the primary interface for control, configuration, and status updates of the motors.
+
+The FPGA SoC we chose for this application is the Digilent Zybo Z7 board with the Zynq7010 SoC onboard.
+
+Without any internal wireless chipset, we needed to include a USB WiFi dongle in order to utilize the wireless networking stack in our Linux kernel and subsequently for ROS and other user applications.
+
+For perception, we are currently evaluating the versatility of a single two-dimensional 360 degree laser range-finder or lidar. We are using the Slamtec RPLIDAR A1, [available here](https://www.slamtec.com/en/Lidar/A1). This communicates with our FPGA over USB connected to the onboard Zynq processor running our Linux distribution. The default serial baud rate is 19200 but can be increased to 115200 for faster transfer rates. In our case, we are currently maximizing this to ensure we are able to quickly issue motor speed commands and request motor speed updates.
+
+
 
 Published: 4 March 2019
 Updated: 4 March 2019
