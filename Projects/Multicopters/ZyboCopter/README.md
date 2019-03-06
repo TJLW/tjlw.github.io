@@ -7,7 +7,7 @@
 
 # ZyboCopter - First Iteration Reseach Copter Platform
 
-<p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/ZyboCopter/Images/IMG_6086.jpg?raw=True"/> </p>
+<p align="center"> <img width="640" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/ZyboCopter/Images/IMG_6086.jpg?raw=True"/> </p>
 <p align="center">
 	The first successful outdoor flight of the ZyboCopter.
 </p>
@@ -65,19 +65,19 @@ In the development process, Ethernet connections to remote machines hosting the 
 ## Pictures
 
 <p align="center">
-<img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/ZyboCopter/Images/IMG_6135.jpg?raw=True" /> </p>
+<img width="640" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/ZyboCopter/Images/IMG_6135.jpg?raw=True" /> </p>
 <p align="center">
 	All contributors who helped build to the first iteration ZyboCopter. From left to right: Myself, Wassim Ramy, and Chenlong "Jim" Lin.
 </p>
 
 <p align="center">
-<img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/ZyboCopter/Images/IMG_5988.jpg?raw=True" /> </p>
+<img width="640" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/ZyboCopter/Images/IMG_5988.jpg?raw=True" /> </p>
 <p align="center">
 	Another in-flight shot.
 </p>
 
 <p align="center">
-<img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/ZyboCopter/Images/IMG_5941.jpg?raw=True" /> </p>
+<img width="640" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/ZyboCopter/Images/IMG_5941.jpg?raw=True" /> </p>
 <p align="center">
 	Closeup of the Zybo SoC based flight controller.
 </p>
