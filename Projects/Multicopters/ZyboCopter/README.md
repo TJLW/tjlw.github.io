@@ -9,7 +9,7 @@
 
 <p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/ZyboCopter/Images/IMG_6086.jpg?raw=True"/> </p>
 <p align="center">
-	<b>The first successful outdoor flight of the ZyboCopter.</b>
+	The first successful outdoor flight of the ZyboCopter.
 </p>
 
 
@@ -35,7 +35,7 @@ ArduPilot devices also require a mission planning software to utilize advanced f
 
 <p align="center"> <img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/ZyboCopter/Images/ZyboCopter-High-Level-Layout.png?raw=True"/> </p>
 <p align="center">
-	<b>High Level System Layout</b>
+	High Level System Layout
 </p>
 
 
@@ -54,7 +54,7 @@ To satisfy the final peripheral requirement, ESCs/Motors, a second AXI-enabled p
 
 <p align="center"> <img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/ZyboCopter/Images/ZyboCopter-Hardware-Design-Diagram.png?raw=True" /> </p>
 <p align="center">
-	<b>Hardware Design</b>
+	Hardware Design
 </p>
 
 In the development process, Ethernet connections to remote machines hosting the ground station software or Xilinx TCF debugging with SDK were used. It was necessary to upgrade this method to wireless for flights, thus the Zybo’s USB port was targeted for a WiFi USB dongle. In attempting to implement this, it was discovered that there is a bug regarding the USB port’s 5V power supply. An alternate solution was devised with a Raspberry Pi serving as a network bridge. Utilizing an existing WiFi network, the Pi will connect and provide port forwarding services. That is, the Zybo is connected to the Pi’s Ethernet subnet and port forwarding is enabled for specified ports in order to allow WLAN to subnet access. Ports 1243, 1534, and 3000 were used for ArduCopter MAVlink commands, Xilinx TCF agent, and SSH respectively. The ZyboCopter’s SSH port was changed to 3000 in order to avoid an SSH collision with port forwarding and provide both the ZyboCopter and Pi separate SSH channels. This solution is currently adequate, though WiFi has a number of downfalls that other communication methods may alleviate. This is a topic of future improvements for the platform.
@@ -67,19 +67,19 @@ In the development process, Ethernet connections to remote machines hosting the 
 <p align="center">
 <img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/ZyboCopter/Images/IMG_6135.jpg?raw=True" /> </p>
 <p align="center">
-	<b>All contributors who helped build to the first iteration ZyboCopter. From left to right: Myself, Wassim Ramy, and Chenlong "Jim" Lin.</b>
+	All contributors who helped build to the first iteration ZyboCopter. From left to right: Myself, Wassim Ramy, and Chenlong "Jim" Lin.
 </p>
 
 <p align="center">
 <img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/ZyboCopter/Images/IMG_5988.jpg?raw=True" /> </p>
 <p align="center">
-	<b>Another in-flight shot.</b>
+	Another in-flight shot.
 </p>
 
 <p align="center">
 <img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/Multicopters/ZyboCopter/Images/IMG_5941.jpg?raw=True" /> </p>
 <p align="center">
-	<b>Closeup of the Zybo SoC based flight controller.</b>
+	Closeup of the Zybo SoC based flight controller.
 </p>
 
 
