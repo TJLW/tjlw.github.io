@@ -24,16 +24,58 @@ The intent of this platform is to handle the evaluation of a number of robotic a
 
 
 
-### Software
+## Software
 
 The software side of this platform utilizes a custom built Linux kernel built with the Xilinx Petalinux software that is booted on the Zynq processor. This allows for an easy generation of a kernel that is appropriate for any of the custom hardware implemented in programmable logic. A base Ubuntu 2018.4 LTS (Bionic Beaver) filesystem is used to complete our operating system.
 
 Playing a central role in the software is the Robotic Operating System (ROS) in order to enable a well-organized control system. Currently with our selection of Ubuntu 2018.2, we are using the latest distribution (at this time) ROS Melodic Morenia.
 
 
+### Arlo ROS Nodes
+
+UPLOAD AND LINK CODE HERE
 
 
-### Hardware
+### Robot Description
+
+As discussed over on the [ROS page](https://tjlw.github.io/Projects/ROS), the robot description given in the form of a URDF file makes for the organization of the robot's links and joints. [Our Arlo robot description file can be found here](). This is an adaptation of the URDF file created for the [ArloBot](https://github.com/chrisl8/ArloBot). Our file differs slightly though we do borrow the ArloBot description's caster wheel STL file for a compelte visualzation in RViz.
+
+
+<p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ArloAGV/Images/ArloRobotModelSide.png?raw=True"/> </p>
+<p align="center">
+	A side view of the Arlo robot model in RViz. We do not visualize the top plat or the standoffs.
+</p>
+
+
+<p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ArloAGV/Images/ArloRobotModelFront.png?raw=True"/> </p>
+<p align="center">
+	A front view of the Arlo robot model in RViz. We do not visualize the top plat or the standoffs. Notice the block box representing the laser floating above the base plate. This is due to the laser currently being mounted to the top plate that is not visualized.
+</p>
+
+
+For the Arlo robot, the primary transformations needed are from the laser scanner frame to the robot base frame, both wheel frames to the robot base frame, and lastly, the robot base frame to the static map frame or ground. The former two are static as the laser and the wheels are both mounted to the robot base frame. The final robot base frame to map frame transformation can be determined by dead-reckoning odometry from wheel encoders or more sophisticated odometry methods using the laser scanner.
+
+<p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ArloAGV/Images/RobotDescriptionTFTree.png?raw=True"/> </p>
+<p align="center">
+	This local TF tree denotes the relationships written in the robot description URDF file. In addition, it shows the odometry frame that is not listed in the URDF file and is served by our joint interface for the Arlo robot, the motor_controller node.
+</p>
+
+
+
+### Motor Controller Interface
+
+### RPLidar
+
+### Teleoperation
+
+iOS Pythonista App
+
+
+
+
+
+
+## Hardware
 
 Complete list of current hardware:
 - Arlo Complete Robotic System
@@ -54,20 +96,7 @@ Digilent support documentation for Zybo Z7 warns that many USB devices will exce
 
 
 
-## Arlo ROS Nodes
 
-UPLOAD AND LINK CODE HERE
-
-
-### Robot Description
-
-### Motor Controller Interface
-
-### RPLidar
-
-### Teleoperation
-
-iOS Pythonista App
 
 
 
@@ -84,7 +113,7 @@ iOS Pythonista App
 <p align="center">
 <img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ArloAGV/Images/ArloBaseConfiguration.jpeg?raw=True" /> </p>
 <p align="center">
-	Arlo Complete Robotic System Base Configuration.
+	Arlo Complete Robotic System Base Configuration
 </p>
 
 
