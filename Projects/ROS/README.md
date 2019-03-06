@@ -103,6 +103,9 @@ A predominant library for realtime two-dimensional or three-dimensional SLAM is 
 We have chosen this library as the sole package for handling SLAM for the Arlo Autonomous Ground Vehicle. Cartographer allows for both realtime and offline map building, though seeing as the goal
 for the Arlo robot was autonomous exploration in an unknown environment, we have worked primarily with realtime scenarios.
 
+This package can subscribe to robot odometry and the laser scans in order to orient itself, collecting scans, can subsequently build a map via matching successive scans.
+
+I would like to go deeper into my current configuration of cartographer for the Arlo robot, but there are many settings I am still playing with for better made maps.
 
 
 
