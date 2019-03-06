@@ -38,7 +38,7 @@ UPLOAD AND LINK CODE HERE
 
 ### Robot Description
 
-As discussed over on the [ROS page](https://tjlw.github.io/Projects/ROS), the robot description given in the form of a URDF file makes for the organization of the robot's links and joints. [Our Arlo robot description file can be found here](). This is an adaptation of the URDF file created for the [ArloBot](https://github.com/chrisl8/ArloBot). Our file differs slightly though we do borrow the ArloBot description's caster wheel STL file for a compelte visualzation in RViz.
+As discussed over on the [ROS page](https://tjlw.github.io/Projects/ROS), the robot description given in the form of a URDF file makes for the organization of the robot's links and joints. [Our Arlo robot description file can be found here](). This is an adaptation of the URDF file created for the [ArloBot](https://github.com/chrisl8/ArloBot). Our file differs slightly though we do borrow the ArloBot description's caster wheel STL file for a complete visualization in RViz.
 
 
 <p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ArloAGV/Images/ArloRobotModelSide.png?raw=True"/> </p>
@@ -82,18 +82,14 @@ For converting the robot frame velocity to separate wheel velocities, we use the
 
 
 # Wheel velocities
-v_left = enc_pos_per_sec * vx - (enc_pos_per_sec * rz * wheelbase_radius)
-
-
+v_left = (enc_pos_per_sec * vx) - (enc_pos_per_sec * rz * wheelbase_radius)
+v_right = (enc_pos_per_sec * vx) + (enc_pos_per_sec * rz * wheelbase_radius)
 ```
-
-
 
 
 With the robot setup being a differential drive, we can use the forward kinematics equations below to estimate the position of the robot at the next time step. This is done in order to issue the pose section of the odometry message.
 
 ```Python
-
 # Definitions
 #  v_left 	= current left wheel velocity
 #  v_right 	= current right wheel velocity
@@ -122,14 +118,8 @@ odom_vy = vx * sin(theta) + vy * cos(theta)
 # Current pose of robot can be obtained with Forward Euler Integration
 current_x_position = previous_x_position + odom_vx * dt  
 current_y_position = previous_y_position + odom_vy * dt  
-
+current_z_rotation = previous_z_rotation + rz * dt
 ```
-
-
-We can also
-
-
-
 
 
 
