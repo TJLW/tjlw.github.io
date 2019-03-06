@@ -120,9 +120,8 @@ With actions such as providing a navigation goal, a local and global planner are
 
 <p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ROS/Images/PlannerPaths.png?raw=True"/> </p>
 <p align="center">
-	Example of the global and local planner paths generated for a navigation goal.
+	Example of the global and local planner paths generated for a navigation goal. The paths are denoted by the green lines marked global and local. These paths are different as the local planner must also consider the current robot's orientation and if the robot is reacting to the velocity commands in the expected manner. In this image, the local planner is attempting to reach the global path as quickly as possible by making a left turn. The global planner acts similarly though operates under different parameters and a larger window of the map is used.  
 </p>
-
 
 
 
