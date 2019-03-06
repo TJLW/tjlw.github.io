@@ -9,7 +9,7 @@
 
 <p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ArloAGV/Images/ArloControlUnit.png?raw=True"/> </p>
 <p align="center">
-	Arlo Ground Vehicle Research Platform
+	<b>Arlo Ground Vehicle Research Platform</b>
 </p>
 
 
@@ -77,14 +77,14 @@ iOS Pythonista App
 <p align="center">
 <img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ArloAGV/Images/ArloInternals.png?raw=True" /> </p>
 <p align="center">
-	Our Arlo setup with the ZyboZ7 SoC board as the primary control board.
+	<b>Our Arlo setup with the ZyboZ7 SoC board as the primary control board.</b>
 </p>
 
 
 <p align="center">
 <img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ArloAGV/Images/ArloBaseConfiguration.jpeg?raw=True" /> </p>
 <p align="center">
-	Arlo Complete Robotic System Base Configuration.
+	<b>Arlo Complete Robotic System Base Configuration.</b>
 </p>
 
 
