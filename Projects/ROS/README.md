@@ -13,11 +13,12 @@
 ## Overview
 
 
-TODO
+This page is an overview of the work I have taken part in involving ROS.
 
 
 ## Robot Specific ROS Nodes
 
+This section discusses the ROS nodes that are generally required to ROSify a robot. Not all of these apply to each robot, though this setup was taken from ROS wiki documentation, tutorials, and support packages for well-established robots like the Turtlebot series.
 
 
 
@@ -114,7 +115,7 @@ With actions such as providing a navigation goal, a local and global planner are
 
 <p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ROS/Images/Example2DCostmap.png?raw=True"/> </p>
 <p align="center">
-	Example of a costmap produced by the move_base global and local planners. The pink and blue areas represent areas with an assigned cost. Settings for adding sensor readings to the costmaps can be adjusted with the planner configurations. Here we only detect obstacles in the underlying map that are within the set thresholds. This is purposely poorly generated map to demonstrate the difference between the global map and costmaps.
+	Example of a costmap produced by the move_base global and local planners. The pink and blue areas represent areas with an assigned cost. Settings for adding sensor readings to the costmaps can be adjusted with the planner configurations. Here we only detect obstacles in the underlying map that are within the set thresholds. This is purposely a poorly generated map to demonstrate the difference between the global map and costmaps.
 </p>
 
 
@@ -126,7 +127,7 @@ With actions such as providing a navigation goal, a local and global planner are
 
 <p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ROS/Images/PlannerPaths.png?raw=True"/> </p>
 <p align="center">
-	Example of the global and local planner paths generated for a navigation goal. The paths are denoted by the green lines marked global and local. These paths are different as the local planner must also consider the current robot's orientation and if the robot is reacting to the velocity commands in the expected manner. In this image, the local planner is attempting to reach the global path as quickly as possible by making a left turn. The global planner acts similarly though operates under different parameters and a larger window of the map is used.  
+	Example of the global and local planner paths generated for a navigation goal. The paths are denoted by the green lines marked global and local extending from the base of the robot. These paths are different as the local planner must also consider the current robot's orientation and if the robot is reacting to the velocity commands in the expected manner. In this image, the local planner is attempting to reach the global path as quickly as possible by making a left turn. The global planner acts similarly though operates under different parameters and a larger window of the map is used.  
 </p>
 
 
