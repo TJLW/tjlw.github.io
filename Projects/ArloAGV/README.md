@@ -75,6 +75,7 @@ For converting the robot frame velocity to separate wheel velocities, we use the
 # Definitions
 #  v_left 	= current left wheel velocity
 #  v_right 	= current right wheel velocity
+
 #  wheelbase_radius   = distance from the center of the robot to the wheel
 #  enc_pos_per_sec    = constant for conversion between encoder
 #   				    positions per second to meters per second
@@ -94,7 +95,7 @@ With the robot setup being a differential drive, we can use the forward kinemati
 ```Python
 
 # Definitions
-#  v_left		= current left wheel velocity
+#  v_left 	= current left wheel velocity
 #  v_right 	= current right wheel velocity
 #  d 				= distance between both wheels
 
