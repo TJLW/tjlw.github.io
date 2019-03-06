@@ -42,13 +42,13 @@ For the [Arlo Autonomous Ground Vehicle](https://tjlw.github.io/Projects/ArloAGV
 
 <p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ROS/Images/RobotDescriptionTFTree.png?raw=True"/> </p>
 <p align="center">
-	This local TF tree denotes the relationships written in the robot description URDF file.
+	This local TF tree denotes the relationships written in the robot description URDF file. In addition, it shows the odometry frame that is not listed in the URDF file and is served by our joint interface for the Arlo robot, the motor_controller node.
 </p>
 
 
-PLACE ARLO TF TREE EXAMPLE HERE (WITH MAP)
+<p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ROS/Images/RobotDescriptionWithMapServerTFTree.png?raw=True"/> </p>
 <p align="center">
-	This global TF tree additionally add the map frame. Note the map frame is not given in the URDF file and is, in our case, intended to be served by a ROS node that builds a map.
+	This global TF tree additionally adds the map frame. Note the map frame is not given in the URDF file and is, in our case, intended to be served by a ROS node that builds a map.
 </p>
 
 
