@@ -42,13 +42,13 @@ For the [Arlo Autonomous Ground Vehicle](https://tjlw.github.io/Projects/ArloAGV
 
 <p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ROS/Images/RobotDescriptionTFTree.png?raw=True"/> </p>
 <p align="center">
-	This local TF tree denotes the relationships written in the robot description URDF file. In addition, it shows the odometry frame that is not listed in the URDF file and is served by our joint interface for the Arlo robot, the motor_controller node.
+	<b>This local TF tree denotes the relationships written in the robot description URDF file. In addition, it shows the odometry frame that is not listed in the URDF file and is served by our joint interface for the Arlo robot, the motor_controller node.</b>
 </p>
 
 
 <p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ROS/Images/RobotDescriptionWithMapServerTFTree.png?raw=True"/> </p>
 <p align="center">
-	This global TF tree additionally adds the map frame. Note the map frame is not given in the URDF file and is, in our case, intended to be served by a ROS node that builds a map such as Google Cartographer.
+	<b>This global TF tree additionally adds the map frame. Note the map frame is not given in the URDF file and is, in our case, intended to be served by a ROS node that builds a map such as Google Cartographer.</b>
 </p>
 
 
@@ -85,7 +85,7 @@ We use the RPLidar A1 on the Arlo Autonomous Ground Vehicle to produce two-dimen
 
 <p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ROS/Images/ExampleRPLidarLaserScan.png?raw=True"/> </p>
 <p align="center">
-	Example of a scan using the RPLidar ROS package and RViz to visualize.
+	<b>Example of a scan using the RPLidar ROS package and RViz to visualize.</b>
 </p>
 
 
@@ -114,7 +114,7 @@ With actions such as providing a navigation goal, a local and global planner are
 
 <p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ROS/Images/Example2DCostmap.png?raw=True"/> </p>
 <p align="center">
-	Example of a costmap produced by the move_base global and local planners. The pink and blue areas represent areas with an assigned cost. Settings for adding sensor readings to the costmaps can be adjusted with the planner configurations. Here we only detect obstacles in the underlying map that are within the set thresholds. This is purposely poorly generated map to demonstrate the difference between the global map and costmaps.
+	<b>Example of a costmap produced by the move_base global and local planners. The pink and blue areas represent areas with an assigned cost. Settings for adding sensor readings to the costmaps can be adjusted with the planner configurations. Here we only detect obstacles in the underlying map that are within the set thresholds. This is purposely poorly generated map to demonstrate the difference between the global map and costmaps.</b>
 </p>
 
 
