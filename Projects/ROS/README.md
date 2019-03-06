@@ -13,6 +13,8 @@
 ## Overview
 
 
+TODO
+
 
 ## Robot Specific ROS Nodes
 
@@ -53,16 +55,26 @@ PLACE ARLO TF TREE EXAMPLE HERE (WITH MAP)
 
 ### Odometry
 
-As can be seen in the Global TF tree above, the primary parent is the map frame with a single child, the odometry frame. The robot description
+As can be seen in the Global TF tree above, the primary parent is the map frame with a single child, the odometry frame. The robot description tree is itself a child of the odometry frame, thus the ability to localize the robot and its peripherals in the environment is dependent on the accuracy of the map to odometry transformation.
 
+One option mentioned above is dead reckoning. This essentially only utilizes the robots odometry from encoder readings for the map to odometry transform. As with any physical system, there will be error in these readings and solely depending on these reading would introduce this error into the ROS aware path of the robot.
+
+Another option is odometry calculated from laser scans. Lidar range finders can provide one, two, or three-dimensional point maps that will be altered as the robot moves through the environment. However, this requires a bit more complexity and is typically available in ROS packages for SLAM and other mapping techniques. See below for a description of our implementation with Google Cartographer on the Arlo Autonomous Ground Vehicle.
 
 
 ### Joint Interface
 
+ROS describes structural components of robots with links and joints, where links are physical structures attached to others via joints. Joints can be static in the case of a hard mounted laser scanner or dynamic in the case of axles attaching wheels to a robot body.
+
+In order to control the a ROS robot, there must be some controller for each dynamic joint. In the case of the [Arlo Autonomous Ground Vehicle](https://tjlw.github.io/Projects/ArloAGV), we have implemented a simple motor controller interface to control the motor speeds and runs as a ROS node. Considering these motors control our robot's locomotion, we also subscribe to the typical cmd_vel message for retrieving the appropriate speed to issue to the physical motor controller board.
 
 
 
 ### Mobility
+
+The kinematics of any robot will be slightly different than others. Does the robot move via wheeled locomotion or legged? Both produce drastically different setups but each still would typically use the cmd_vel message to retrieve commands for movement. The cmd_vel message is composed of linear and rotational velocities that must be converted to appropriate joint commands.
+
+For the Arlo Autonomous Ground Vehicle, we must depend on the kinematics of a wheeled non-holonomic robot. It has two wheels centered on outsides of the round structural frame, thus it cannot move sideways and only forwards, backwards, or rotational motion is available. Please refer to the [Arlo Autonomous Ground Vehicle](https://tjlw.github.io/Projects/ArloAGV) page for equations.
 
 
 
@@ -80,4 +92,4 @@ As can be seen in the Global TF tree above, the primary parent is the map frame 
 
 
 
-Updated: 4 March 2019, Published: 4 March 2019
+Updated: 6 March 2019, Published: 4 March 2019

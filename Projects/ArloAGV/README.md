@@ -74,9 +74,13 @@ iOS Pythonista App
 
 ### Pictures
 
-TODO
+<p align="center">
+<img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ArloAGV/Images/ArloBaseConfiguration.jpg?raw=True" /> </p>
+<p align="center">
+	Arlo Complete Robotic System Base Configuration. [Available here](https://www.parallax.com/product/28966).
+</p>
 
 
 
 
-Updated: 4 March 2019, Published: 4 March 2019
+Updated: 6 March 2019, Published: 4 March 2019
