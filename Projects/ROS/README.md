@@ -118,7 +118,10 @@ With actions such as providing a navigation goal, a local and global planner are
 </p>
 
 
-
+<p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ROS/Images/PlannerPaths.png?raw=True"/> </p>
+<p align="center">
+	Example of the global and local planner paths generated for a navigation goal.
+</p>
 
 
 
