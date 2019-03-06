@@ -31,9 +31,6 @@ The software side of this platform utilizes a custom built Linux kernel built wi
 Playing a central role in the software is the Robotic Operating System (ROS) in order to enable a well-organized control system. Currently with our selection of Ubuntu 2018.2, we are using the latest distribution (at this time) ROS Melodic Morenia.
 
 
-### Arlo ROS Nodes
-
-UPLOAD AND LINK CODE HERE
 
 
 ### Robot Description
@@ -124,6 +121,13 @@ current_z_rotation = previous_z_rotation + rz * dt
 
 
 
+### Source Code
+
+Coming soon!
+
+
+
+
 ### RPLidar
 
 We use the RPLidar A1 on the Arlo Autonomous Ground Vehicle to produce two-dimensional point-maps. The ROS package [rplidar](http://wiki.ros.org/rplidar) for handling the interaction with the laser scanner and retrieving a [LaserScan](http://docs.ros.org/melodic/api/sensor_msgs/html/msg/LaserScan.html) message.
@@ -159,11 +163,7 @@ Digilent support documentation for Zybo Z7 warns that many USB devices will exce
 
 
 
-
-
-
-
-### Pictures
+## Pictures
 
 <p align="center">
 <img width="640" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ArloAGV/Images/ArloInternals.png?raw=True" /> </p>
