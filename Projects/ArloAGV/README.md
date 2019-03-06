@@ -43,13 +43,13 @@ As discussed over on the [ROS page](https://tjlw.github.io/Projects/ROS), the ro
 
 <p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ArloAGV/Images/ArloRobotModelSide.png?raw=True"/> </p>
 <p align="center">
-	A side view of the Arlo robot model in RViz. We do not visualize the top plat or the standoffs.
+	A side view of the Arlo robot model in RViz. We do not visualize the top plate or the standoffs.
 </p>
 
 
 <p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ArloAGV/Images/ArloRobotModelFront.png?raw=True"/> </p>
 <p align="center">
-	A front view of the Arlo robot model in RViz. We do not visualize the top plat or the standoffs. Notice the block box representing the laser floating above the base plate. This is due to the laser currently being mounted to the top plate that is not visualized.
+	A front view of the Arlo robot model in RViz. We do not visualize the top plate or the standoffs. Notice the black box representing the laser floating above the base plate. This is due to the laser currently being mounted to the top plate that is not visualized.
 </p>
 
 
@@ -62,9 +62,46 @@ For the Arlo robot, the primary transformations needed are from the laser scanne
 
 
 
+
 ### Motor Controller Interface
 
+We have made a ROS node capable of communicating with motor controller board that comes with the default configuration of the Arlo. This motor controller communicates via serial to the Zybo SoC. It is capable of receiving a stream of speed commands as well as responding to speed requests. Speed commands are issued when received while the wheel speed readings are requested in a configurable period loop.
+
+Considering the cmd_vel command is the target message for listening for locomotion commands we need to convert the velocities received in the frame of the base_link to velocities for both the left, v_left, and right, v_right, wheel of the Arlo. Being specific, we will receive a linear velocity vx, vy, and vz and rotational velocities rx, ry, and rz for defining the linear and rotation velocities in the x, y, and z dimensions, respectively. Considering the robot is non-holonomic and does not move in the z dimension, we are only interested in vx and ry.
+
+With the robot setup being a differnetial drive, we can use the equations below to de
+
+
+```Python
+
+# Velocities in the robot frame (Linear/rotational motion)
+vx = (v_right + v_left) / 2
+rz = (v_right - v_left) / d 	# d is the distance between both wheels
+
+
+# Velocities in the odometry frame (Positional/rotational motion)
+odom_vx = vx * cos(theta) - vy * sin(theta)		# theta is the current heading of the robot
+odom_vy = vx * sin(theta) + vy * cos(theta)
+
+
+# Current pose of robot can be obtained with f
+
+
+
+```
+
 ### RPLidar
+
+We use the RPLidar A1 on the Arlo Autonomous Ground Vehicle to produce two-dimensional point-maps. The ROS package [rplidar](http://wiki.ros.org/rplidar) for handling the interaction with the laser scanner and retrieving a [LaserScan](http://docs.ros.org/melodic/api/sensor_msgs/html/msg/LaserScan.html) message.
+
+
+<p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ArloAGV/Images/ExampleRPLidarLaserScan.png?raw=True"/> </p>
+<p align="center">
+	Example of a scan using the RPLidar ROS package and RViz to visualize.
+</p>
+
+
+
 
 ### Teleoperation
 
