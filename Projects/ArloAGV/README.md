@@ -69,26 +69,69 @@ We have made a ROS node capable of communicating with motor controller board tha
 
 Considering the cmd_vel command is the target message for listening for locomotion commands we need to convert the velocities received in the frame of the base_link to velocities for both the left, v_left, and right, v_right, wheel of the Arlo. Being specific, we will receive a linear velocity vx, vy, and vz and rotational velocities rx, ry, and rz for defining the linear and rotation velocities in the x, y, and z dimensions, respectively. Considering the robot is non-holonomic and does not move in the z dimension, we are only interested in vx and ry.
 
-With the robot setup being a differnetial drive, we can use the equations below to de
-
+For converting the robot frame velocity to separate wheel velocities, we use the following equations:
 
 ```Python
-
-# Velocities in the robot frame (Linear/rotational motion)
-vx = (v_right + v_left) / 2
-rz = (v_right - v_left) / d 	# d is the distance between both wheels
-
-
-# Velocities in the odometry frame (Positional/rotational motion)
-odom_vx = vx * cos(theta) - vy * sin(theta)		# theta is the current heading of the robot
-odom_vy = vx * sin(theta) + vy * cos(theta)
+# Definitions
+#  v_left		 	= current left wheel velocity
+#  v_right			= current right wheel velocity
+#  wheelbase_radius   = distance from the center of the robot to the wheel
+#  enc_pos_per_sec    = constant for conversion between encoder
+#   				    positions per second to meters per second
 
 
-# Current pose of robot can be obtained with f
-
+# Wheel velocities
+v_left = enc_pos_per_sec * vx - (enc_pos_per_sec * rz * wheelbase_radius)
 
 
 ```
+
+
+
+
+With the robot setup being a differential drive, we can use the forward kinematics equations below to determine estimate the position of the robot at the next time step. This is done in order to issue the pose section of the odometry message.
+
+```Python
+
+# Definitions
+#  v_left		= current left wheel velocity
+#  v_right	   = current right wheel velocity
+#  d 			= distance between both wheels
+
+#  vx			= current linear velocity, x dimension (robot frame)
+#  rz			= current rotational velocity, z dimension (robot frame)
+#  theta	 	= current heading (robot frame)
+
+#  odom_vx	   = current linear velocity, x dimension (odometry frame)
+#  odom_vy	   = current rotational velocity, z dimension (odometry frame)
+
+#  dt			= time between previous position reading and now
+
+
+# Velocities in the robot frame (Linear/rotational motion)
+vx = (v_right + v_left) / 2
+rz = (v_right - v_left) / d  
+
+
+# Velocities in the odometry frame (Positional/rotational motion)
+odom_vx = vx * cos(theta) - vy * sin(theta)
+odom_vy = vx * sin(theta) + vy * cos(theta)
+
+
+# Current pose of robot can be obtained with Forward Euler Integration
+current_x_position = previous_x_position + odom_vx * dt  
+current_y_position = previous_y_position + odom_vy * dt  
+
+```
+
+
+We can also
+
+
+
+
+
+
 
 ### RPLidar
 
