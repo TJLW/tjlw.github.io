@@ -78,7 +78,7 @@ For converting the robot frame velocity to separate wheel velocities, we use the
 
 #  wheelbase_radius   = distance from the center of the robot to the wheel
 #  enc_pos_per_sec    = constant for conversion between encoder
-#  		positions per second to meters per second
+#  			positions per second to meters per second
 
 
 # Wheel velocities
@@ -90,7 +90,7 @@ v_left = enc_pos_per_sec * vx - (enc_pos_per_sec * rz * wheelbase_radius)
 
 
 
-With the robot setup being a differential drive, we can use the forward kinematics equations below to determine estimate the position of the robot at the next time step. This is done in order to issue the pose section of the odometry message.
+With the robot setup being a differential drive, we can use the forward kinematics equations below to estimate the position of the robot at the next time step. This is done in order to issue the pose section of the odometry message.
 
 ```Python
 
@@ -106,7 +106,7 @@ With the robot setup being a differential drive, we can use the forward kinemati
 #  odom_vx 	= current linear velocity, x dimension (odometry frame)
 #  odom_vy 	= current rotational velocity, z dimension (odometry frame)
 
-#  dt 	= time between previous position reading and now
+#  dt 		= time between previous position reading and now
 
 
 # Velocities in the robot frame (Linear/rotational motion)
