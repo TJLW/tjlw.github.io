@@ -75,7 +75,7 @@ iOS Pythonista App
 ### Pictures
 
 <p align="center">
-<img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ArloAGV/Images/ArloInternals.jpeg?raw=True" /> </p>
+<img src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ArloAGV/Images/ArloInternals.png?raw=True" /> </p>
 <p align="center">
 	Our Arlo setup with the ZyboZ7 SoC board as the primary control board.
 </p>
