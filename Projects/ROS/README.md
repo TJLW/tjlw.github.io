@@ -40,7 +40,7 @@ For the [Arlo Autonomous Ground Vehicle](https://tjlw.github.io/Projects/ArloAGV
 
 
 
-PLACE ARLO TF TREE EXAMPLE HERE (ARLO NODES ONLY)
+<p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ROS/Images/RobotDescriptionTFTree.png?raw=True"/> </p>
 <p align="center">
 	This local TF tree denotes the relationships written in the robot description URDF file.
 </p>
