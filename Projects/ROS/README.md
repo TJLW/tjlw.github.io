@@ -123,6 +123,11 @@ With actions such as providing a navigation goal, a local and global planner are
 	Example of the global and local planner paths generated for a navigation goal. The paths are denoted by the green lines marked global and local. These paths are different as the local planner must also consider the current robot's orientation and if the robot is reacting to the velocity commands in the expected manner. In this image, the local planner is attempting to reach the global path as quickly as possible by making a left turn. The global planner acts similarly though operates under different parameters and a larger window of the map is used.  
 </p>
 
+<p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ROS/Images/HighConfidenceMap.png?raw=True"/> </p>
+<p align="center">
+	Example of a well established map. The map denoted by the grayscale filling is much whiter in this image as the mapping has had sufficient sensor readings to rate these areas with high confidence. In turn, the obstacles denoted by the blue and pink costmaps are finer tuned as a result of this map confidence.
+</p>
+
 
 
 Updated: 6 March 2019, Published: 4 March 2019
