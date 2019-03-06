@@ -80,7 +80,7 @@ For the Arlo Autonomous Ground Vehicle, we must depend on the kinematics of a wh
 
 ### RPLidar A1
 
-We use the RPLidar A1 on the Arlo Autonomous Ground Vehicle to produce two-dimensional point-maps.
+We use the RPLidar A1 on the Arlo Autonomous Ground Vehicle to produce two-dimensional point-maps. The ROS package [rplidar](http://wiki.ros.org/rplidar) for handling the interaction with the laser scanner and retrieving a [LaserScan](http://docs.ros.org/melodic/api/sensor_msgs/html/msg/LaserScan.html) message.
 
 
 <p align="center"> <img width="auto" src="https://github.com/TJLW/tjlw.github.io/blob/master/Projects/ROS/Images/ExampleRPLidarLaserScan.png?raw=True"/> </p>
