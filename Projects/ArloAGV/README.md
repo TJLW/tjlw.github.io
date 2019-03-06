@@ -87,7 +87,7 @@ v_right = (enc_pos_per_sec * vx) + (enc_pos_per_sec * rz * wheelbase_radius)
 ```
 
 
-With the robot setup being a differential drive, we can use the forward kinematics equations below to estimate the position of the robot at the next time step. This is done in order to issue the pose section of the odometry message.
+With the robot setup being a differential drive, we can use the forward kinematics equations below to estimate the position of the robot at the next time step. This is done in order to issue the odometry message. Here we get the pose and orientation. See [ROS odometry](http://docs.ros.org/melodic/api/nav_msgs/html/msg/Odometry.html) for how this message is structured.
 
 ```Python
 # Definitions
@@ -133,15 +133,6 @@ We use the RPLidar A1 on the Arlo Autonomous Ground Vehicle to produce two-dimen
 <p align="center">
 	Example of a scan using the RPLidar ROS package and RViz to visualize.
 </p>
-
-
-
-
-### Teleoperation
-
-iOS Pythonista App
-
-
 
 
 
