@@ -73,8 +73,8 @@ For converting the robot frame velocity to separate wheel velocities, we use the
 
 ```Python
 # Definitions
-#  v_left		 	= current left wheel velocity
-#  v_right			= current right wheel velocity
+#  v_left 	= current left wheel velocity
+#  v_right 	= current right wheel velocity
 #  wheelbase_radius   = distance from the center of the robot to the wheel
 #  enc_pos_per_sec    = constant for conversion between encoder
 #   				    positions per second to meters per second
@@ -95,17 +95,17 @@ With the robot setup being a differential drive, we can use the forward kinemati
 
 # Definitions
 #  v_left		= current left wheel velocity
-#  v_right	   = current right wheel velocity
-#  d 			= distance between both wheels
+#  v_right 	= current right wheel velocity
+#  d 				= distance between both wheels
 
-#  vx			= current linear velocity, x dimension (robot frame)
-#  rz			= current rotational velocity, z dimension (robot frame)
-#  theta	 	= current heading (robot frame)
+#  vx 		= current linear velocity, x dimension (robot frame)
+#  rz 		= current rotational velocity, z dimension (robot frame)
+#  theta 	= current heading (robot frame)
 
-#  odom_vx	   = current linear velocity, x dimension (odometry frame)
-#  odom_vy	   = current rotational velocity, z dimension (odometry frame)
+#  odom_vx 	= current linear velocity, x dimension (odometry frame)
+#  odom_vy 	= current rotational velocity, z dimension (odometry frame)
 
-#  dt			= time between previous position reading and now
+#  dt = time between previous position reading and now
 
 
 # Velocities in the robot frame (Linear/rotational motion)
