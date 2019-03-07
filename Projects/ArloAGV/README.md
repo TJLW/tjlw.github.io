@@ -121,13 +121,6 @@ current_z_rotation = previous_z_rotation + rz * dt
 
 
 
-### Source Code
-
-Coming soon!
-
-
-
-
 ### RPLidar
 
 We use the RPLidar A1 on the Arlo Autonomous Ground Vehicle to produce two-dimensional point-maps. The ROS package [rplidar](http://wiki.ros.org/rplidar) for handling the interaction with the laser scanner and retrieving a [LaserScan](http://docs.ros.org/melodic/api/sensor_msgs/html/msg/LaserScan.html) message.
@@ -137,6 +130,13 @@ We use the RPLidar A1 on the Arlo Autonomous Ground Vehicle to produce two-dimen
 <p align="center">
 	Example of a scan using the RPLidar ROS package and RViz to visualize.
 </p>
+
+
+
+
+### Source Code
+
+Coming soon!
 
 
 
